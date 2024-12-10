@@ -1,0 +1,199 @@
+body{
+    background: linear-gradient(to right,#1221a3, #fffb02);
+   font-family: sans-serif;
+}
+
+.encabezado{
+    background-color: gray;
+    display: block;
+    color: white;
+margin: 0;
+    width: 100%;
+
+
+}
+.encabezado h1{
+    
+    text-align: center;
+    
+    
+}
+
+.introduccion{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    background-color: #9DBEBB;
+    padding: 5px;
+    width: 98%;
+    height:150px;
+    overflow: auto;
+    transition: 1s;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 16px;
+    border-color: 2px solid black;
+    border-radius: 4px;
+ 
+}
+.introduccion img{
+    width: 30%;
+    height:200px;
+}
+.introduccion p{
+    padding: 10px;
+}
+
+.introduccion::-webkit-scrollbar{
+    width: 5px;
+}
+.introduccion::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+
+
+.menu {
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.0);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    align-content: center;
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 15px 1em;
+    flex: 1 1 auto; 
+    background: rgba(41, 38, 38, 0.99);
+    color: white;
+    transition: 0.2s;
+    margin: 0;
+    text-align: center;
+}
+
+.menu a:hover{
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+
+.todo{
+    width: 97vw;
+    height: 750px;
+    padding: 20px;
+
+}
+    
+
+
+.estructura{
+    background-color: #9DBEBB;
+    padding:1px;
+    border-radius: 4px;
+    margin-top: 15px;
+    width:69%;
+    height: 360px;
+    overflow: auto;
+    border: 2px solid white;
+    float: right;
+    margin-left: 10px;
+    align-items: center;
+    align-content: center;
+    margin-right: 10px;
+    
+}
+.estructura h1{
+    text-align: center;
+}
+.estructura img{
+    width: 20%;
+    height: 150px;
+    border: 2px solid black;
+    margin: 0 0 0 10%;
+    box-shadow: 0, 0 , 10px 10px black;
+}
+
+
+.estructura h3{
+    text-align: center;
+    transition: 0.5s;
+    
+}
+
+.estructura::-webkit-scrollbar{
+    width: 5px;
+}
+.estructura::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+.estructura p{
+    padding: 10px;
+    text-align: justify;
+    transition: 0.5s;
+}
+
+
+
+.seccion-historia{
+    background-color: #9DBEBB;
+    padding:1px;
+    border-radius: 4px;
+    margin-top: 15px;
+    width:25vw;
+    height: 740px;
+    border: 2px solid white;
+    float: left;
+    
+    align-items: center;
+    overflow: auto;
+    
+    
+    
+    
+}
+.seccion-historia h2{
+    text-align: center;
+    transition: 0.5s;
+    
+}
+
+.seccion-historia img{
+    margin-left:10% ;
+    border-radius: 3%;
+    border: 2px black solid;
+    width: 70%;
+    
+}
+.seccion-historia p{
+    text-align: justify;
+    padding: 8%;
+    font-size: 100%;
+    
+}
+
+
+
+
+
+.pie-de-pagina{
+    padding: 20px;
+    text-align: center;
+    
+
+
+}
+
+.pie-de-pagina a{
+    text-decoration: none;
+    
+}

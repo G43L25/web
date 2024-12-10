@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Registro.css">
+    <title>Registro</title>
+</head>
+<body>
+
+    <div class="caja-registro">
+        
+        <h1 align="center">Registro</h1>
+        
+        <label for="">Nombre(s)</label><br>
+        <input type="text" name="Nombre" placeholder="Escribe tu(s) nombre(s) aqui" id="nombre" required><br><br>
+
+        <label for="">Apellido(s)</label><br>
+        <input type="text" name="Nombre" placeholde1682r="Escribe tu(s) apellido(s) aqui" id="nombre" required><br><br>
+
+
+        <label for="">Email</label><br>
+        <input type="mail" name="Email" placeholder="Escribe tu Email aqui"><br><br>
+        
+        <label for="">Numero de telefono</label><br>
+        <input type="number" name="telefono" placeholder="Escribe tu numero aqui"><br><br>
+
+        <label class="nacimiento" id="nacimiento">Fecha de nacimiento</label><br>
+        <input type="date" name="nacimiento"><br><br>
+
+        <label class="nacimiento">Contraseña</label><br>
+        <input type="password" name="Contraseña" placeholder="Al menos 8 caracteres">
+
+        <button id="boton-registro" onclick="valor();">Registrar</button>
+
+        
+
+
+        
+
+    </div>
+
+    <footer class="pie-de-pagina">
+        <p>
+           &copy; 2024 <em>Desarrollo Web.</em> Todos los derechos reservados. Contacto:
+           <a href="mailto:g43l25@gmail.com"><em>Gael Gallegos</em></a>
+        </p>
+        <p>
+            <a href="bibligrafias.html">Bibliografías</a>
+    
+        </p>
+    
+    
+      </footer>
+
+
+    <script>
+        function valor(){
+        var nombre
+        nombre = document.getElementById('nombre').value;
+        alert('Bienvenido '+nombre);
+        window.location.href = "../index.html";
+    }
+
+
+    </script>
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+
+    <style>
+        
+        body{
+            background: linear-gradient(to right,#1221a3, #fffb02);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .encabezado{
+            background-color: gray;
+            display: block;
+            color: white;
+
+        }
+        .encabezado h1{
+            
+            text-align: center;
+            
+            
+        }
+
+        .introduccion{
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            text-align: justify;
+            background-color: #9DBEBB;
+            padding: 5px;
+            width: 98.5%;
+            height:auto;
+            overflow: auto;
+            transition: 1s;
+            cursor: pointer;
+            margin-right: 70%;
+            margin-top: 16px;
+            border-color: 2px solid black;
+            border-radius: 4px;
+        }
+
+        .introduccion::-webkit-scrollbar{
+            width: 5px;
+        }
+        .introduccion::-webkit-scrollbar-thumb {
+            background-color: rgb(255, 255, 255);
+            border-radius: 4px;
+        }
+
+      
+
+
+
+        
+
+        .Menu-lateral{
+        height: 100%;
+        width: 0;
+        background-color: gray;
+        z-index: 1;
+        padding-top: 60px;
+        position:absolute;
+        left: 0;overflow-x: hidden;
+        transition: 0.5s;
+        border-radius: 3%;
+        background:linear-gradient(to bottom, gray , rgb(9, 77, 77))
+    
+        }
+
+        .Menu-lateral a{
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            padding: 20px 8px 8px 32px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .Menu-lateral a:hover{
+            color: blue;
+            font-size:35px ;
+            transition: 0.3s;
+        }
+        
+
+        .Menu-lateral .cerrar{
+            position: absolute;
+            top: 10px;
+            right: 20;
+            margin-left: 160px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .icono-abrir{
+            display:inline;
+            padding: 15px;
+            padding-top: 25px;
+            border:2px solid white;
+            border-radius: 4%;
+            transition: 0.5s;
+            cursor: pointer;
+            position: relative;
+            
+        }
+
+        .icono-abrir:hover{
+            background-color: white;
+        }
+
+        .abrir-m {
+            font-size: 40px;
+            cursor: pointer;
+            color: white;
+            border-color:solid white;
+        }
+
+        .icono-abrir:hover .abrir-m{
+            font-size: 40px;
+            color: blue;
+            border-color:solid white;
+            transition: 0.3s;
+        }
+
+        .contenedor1{
+            background-color: #9DBEBB;
+            padding:1px;
+            border-radius: 4px;
+            margin-top: 15px;
+            width: 25%;
+            height: 250px;
+            
+            border: 2px solid white;
+        }
+        .contenedor1 img{
+            box-shadow: 0 0 5px 5px;
+            
+            
+        }
+
+        .contenedor1::-webkit-scrollbar{
+            width: 5px;
+        }
+        .contenedor1::-webkit-scrollbar-thumb {
+            background-color: rgb(255, 255, 255);
+            border-radius: 4px;
+        }
+        .contenedor1 p{
+            padding: 10px;
+            text-align: justify;
+            transition: 0.5s;
+        }
+
+        .prueba{
+            background-color: #9DBEBB;
+            padding:1px;
+            border-radius: 4px;
+            margin-top: 15px;
+            width:70%;
+            height: 250px;
+            overflow: auto;
+            border: 2px solid white;
+            float: right;
+            margin-left: 35px;
+            
+        }
+        .prueba h3{
+            text-align: center;
+            transition: 0.5s;
+            
+        }
+
+        .prueba::-webkit-scrollbar{
+            width: 5px;
+        }
+        .prueba::-webkit-scrollbar-thumb {
+            background-color: rgb(255, 255, 255);
+            border-radius: 4px;
+        }
+        .prueba p{
+            padding: 10px;
+            text-align: justify;
+            transition: 0.5s;
+        }
+        .contenedor{
+            display:flex;
+            
+            
+        }
+
+
+        .prueba2{
+            background-color: #9DBEBB;
+            padding:1px;
+            border-radius: 4px;
+            margin-top: 15px;
+            width:48%;
+            height: 250px;
+           
+            border: 2px solid white;
+            float: left;
+            margin-left: 0px;
+            
+        }
+        .prueba2 h3{
+            text-align: center;
+            transition: 0.5s;
+            
+        }
+
+
+
+        .prueba3{
+            background-color: #9DBEBB;
+            padding:1px;
+            border-radius: 4px;
+            margin-top: 15px;
+            width:48%;
+            height: 250px;
+            
+            border: 2px solid white;
+            float: left;
+            margin-left: 20px;
+            
+        }
+        .prueba3 img{
+            box-shadow: 0 0 5px  5px;
+            
+        }
+
+        .prueba3::-webkit-scrollbar{
+            width: 5px;
+        }
+        .prueba3::-webkit-scrollbar-thumb {
+            background-color: rgb(255, 255, 255);
+            border-radius: 4px;
+        }
+        .prueba3 p{
+            padding: 10px;
+            text-align: justify;
+            transition: 0.5s;
+        }
+    
+       
+            
+        
+      
+    </style>
+</head>
+<body>
+    <header class="encabezado">
+        <hr>
+        <h1>PYTHON</h1>
+        <hr>
+
+    </header>
+
+    
+    <aside id="menuLateral" class="Menu-lateral">
+        <a class="cerrar" onclick="cerrar()"><-</a>
+        <a href="../Principal/Plantilla.html">Inicio</a>
+        <a href="python.html">Python</a>
+        <a href="html.html">Html</a>
+        <a href="css.html">Css</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="mailto:g43l25@gmail.com">Contacto</a>
+                
+</aside>
+    <div class="icono-abrir" id="marco-abrir" onclick="abrir()">
+        <span id="abrirmenu" onclick="abrir()" class="abrir-m">|||</span>
+    </div>
+
+    <div class="introduccion">
+        <h3>Introducción</h3>
+        <p>Python es un lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de software,
+             la ciencia de datos y el machine learning (ML). Los desarrolladores utilizan Python porque
+             es eficiente y fácil de aprender, además de que se puede ejecutar en muchas plataformas diferentes.
+        </p>
+        
+
+    </div>
+
+    <div class="contenedor">
+    <article class="contenedor1">
+    
+
+    <img src="https://programacionpro.com/wp-content/uploads/2023/11/guido.jpg" width="100%" height="100%">
+        
+
+    </article>
+
+    <article class="prueba">
+        <h3>Historia</h3>
+    
+        <p>
+
+                         
+        Python es un lenguaje de programación creado por Guido van Rossum y lanzado en 1991. Van Rossum comenzó a trabajar en Python a finales 
+        de los años 80 mientras trabajaba en el Centrum Wiskunde & Informatica (CWI) en los Países Bajos, buscando un lenguaje que fuera fácil de leer y que permitiera escribir código claro y conciso.
+        
+        Se inspiró en lenguajes como ABC, C, Modula-3 y Unix shell scripting, con el objetivo de hacer un lenguaje accesible para programadores novatos
+         y profesionales. Python se destacó por su simplicidad, su sintaxis clara y su enfoque en la legibilidad, lo que lo convirtió en uno de los lenguajes de programación más populares en el mundo.
+        
+        Desde entonces, Python ha evolucionado a través de varias versiones importantes (Python 2 en 2000 y Python 3 en 2008), y ha sido ampliamente adoptado en
+         áreas como desarrollo web, automatización, análisis de datos, inteligencia artificial y más. Su comunidad activa y gran cantidad de bibliotecas contribuyen a su creciente popularidad.
+
+
+
+        </p>
+            
+     
+        
+    </div>
+
+
+    <div class="contenedor">
+
+        <article class="prueba2">
+            <h3>Ejemplo de codigo simple</h3>
+            <img src="../Imagenes/Ejemplo-python1.png" width="100%" height="80%">
+
+            </article>
+
+
+            <article class="prueba3">
+                <h3 align="center">Resultado</h3>
+
+                <img src="../Imagenes/resultado-python.png" width="100%" height="80%">
+           
+                </article>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+        
+function abrir(){
+    document.getElementById("menuLateral").style.width= "250px";
+    document.getElementById("marco-abrir").style.border="0px solid transparent";
+    document.getElementById("menuLateral").style.border= "3px solid white";
+}
+
+function cerrar(){
+    document.getElementById("menuLateral").style.width="0px";
+    document.getElementById("marco-abrir").style.border="2px solid white";
+    document.getElementById("menuLateral").style.border= "0px solid transparent";
+}
+
+
+function formulario(){
+    document.getElementById("form").style.height="320px"
+    document.getElementById("form").style.backgroundColor="white";
+    document.getElementById("titulo").style.color="black";
+   
+}
+
+function volver(){
+
+    document.getElementById("form").style.height="60px";
+    document.getElementById("form").style.backgroundColor="transparent";
+    document.getElementById("titulo").style.color="white";
+}
+    </script>
+    
+</body>
+</html>

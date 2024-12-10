@@ -1,0 +1,83 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(78, 69, 69);
+
+}
+
+.caja-registro{
+    margin: 50px  auto;
+    border-radius: 10px;
+    background-color:rgb(29, 28, 28);
+    width:450px;
+    height: 550px;
+    
+
+}
+
+.caja-registro h1{
+    padding: 20px;
+    color: white;
+}
+
+label{
+    color: whitesmoke;
+    margin-left: 20px;
+    font-size: 12px;
+
+}
+
+input{
+    margin-left: 20px;
+    margin-top: 5px;
+    background-color:rgb(29, 28, 28) ;
+    width: 90%;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 3px;
+    height: 20px;
+    transition: 0.3s;
+    
+}
+input:focus{
+    border-color: rgb(255, 255, 255);
+    outline: none;
+    transform: scale(1.02);
+}
+
+#boton-registro{
+    padding: 5px 5px;
+    margin: 30px 185px;
+    background-color: gray;
+    color: white;
+    transition: 0.2s;
+}
+
+#boton-registro:hover{
+    filter: brightness(80%);
+
+}
+
+#boton-registro:active{
+    outline: none; 
+    padding: 3px;
+    box-shadow: 0 2px 2px 0 solid white;
+   
+}
+
+.pie-de-pagina{
+    text-align: center;
+
+    
+
+
+}
+
+.pie-de-pagina a{
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+
+
+
